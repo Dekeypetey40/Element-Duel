@@ -19,9 +19,10 @@ body {
 /* Game Area Styles */
 .game-area {
     background-color: rgb(217, 217, 248);
-    margin: 0 20vw;
     padding: 5%;
     margin-bottom: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .rules-area {
@@ -33,6 +34,8 @@ body {
 
 .element-area {
     margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
 }
 .result-area {
     padding: 5vh 5vw;
@@ -50,4 +53,13 @@ body {
 }
 
 /* Button Styles */
+.begin-duel {
+    font-family: 'Lugrasimo', cursive, Helvetica, sans-serif ;
+    width: 20vw;
+    height: 10vh;
+}
+.element {
+    width: 15rem;
+    height: 15rem;
 
+}
