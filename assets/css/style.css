@@ -1,7 +1,6 @@
 /*Global Styles*/
 * {
     margin: 0;
-    padding: 0;
     border: none;
     box-sizing: border-box;
   }
@@ -12,4 +11,35 @@ body {
     background-color: white;
     color: black;
     text-align: center;
+}
+
+
+/* Game Area Styles */
+.game-area {
+    background-color: rgb(217, 217, 248);
+    margin: 0 20vw;
+    padding: 5%;
+    margin-bottom: 5vh;
+}
+
+.rules-area {
+    padding: 10px;
+}
+
+.element-area {
+    margin: 10px auto;
+}
+.result-area {
+    padding: 5vh 5vw;
+    
+}
+.score-area {
+    background-color: rgb(217, 217, 248);
+    display: inline-block;
+}
+#wins {
+    color:green
+}
+#losses {
+    color: red;
 }
