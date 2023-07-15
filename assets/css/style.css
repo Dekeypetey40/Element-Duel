@@ -1,0 +1,15 @@
+/*Global Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
