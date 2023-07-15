@@ -33,7 +33,7 @@ body {
 }
 
 .element-area {
-    margin: 10px auto;
+    
     display: flex;
     justify-content: space-around;
 }
@@ -53,13 +53,57 @@ body {
 }
 
 /* Button Styles */
-.begin-duel {
+.button {
     font-family: 'Lugrasimo', cursive, Helvetica, sans-serif ;
-    width: 20vw;
-    height: 10vh;
+    width: 10rem;
+    height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
 }
-.element {
-    width: 15rem;
-    height: 15rem;
-
+.button:focus {
+    outline: none;
+}
+.big {
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 4rem;
+    margin: 0 20px;
+    transition: all 0.5s;
+}
+.big:after {
+    content: attr(data-type);
+    font-size: 1rem;
+    color: black;
+    position: relative;
+    top: -3rem;
+    left: -0.2rem
+}
+.red {
+    border-color: red;
+    color: red;
+}
+.blue {
+    border-color: blue;
+    color: blue;
+}
+.green {
+    border-color: green;
+    color: green;
+}
+.red:active,
+.red:hover {
+    background-color: orange;
+}
+.blue:active,
+.blue:hover {
+    background-color: aquamarine;
+}
+.green:active,
+.green:hover {
+    background-color: lightgreen;
 }
