@@ -24,27 +24,37 @@
             <li>If you and the computer pick the same element no advantages are given</li>
         </ul>
         <h3>How To Play</h3>
-        <ol>
+        <ol class="rules">
             <li>Click the Begin Duel button </li>
             <li>Select your element and the dice will be rolled</li>
         </ol>
     </div>
     <div class="game-area">
         <div class="element-area">
-            <button data-type="addition" class="element big red">
+            <div>
+            <button data-type="fire" class="button big red">
                 <i class="fa-solid fa-fire"></i>
             </button>
-            <button data-type="subtract" class="element big blue">
+            <p class="button-text">Fire</p>
+            </div>
+            <div>
+            <button data-type="water" class="button big blue">
                 <i class="fa-solid fa-droplet"></i>
             </button>
-            <button data-type="multiply" class="element big green">
+            <p class="button-text">Water</p>
+            </div>
+            <div>
+            <button data-type="nature" class="button big green">
                 <i class="fa-solid fa-seedling"></i>
             </button>
+            <p class="button-text">Nature</p>
+            </div>
         </div>
+        
         <div class="result-area">
             <span id="result">Your Fate Is Yet To Be Decided</span>
         </div>
-        <button data-type="submit" class="begin-duel">Begin Duel</button>
+        <button data-type="submit" class="button">Begin Duel</button>
     </div>
     <div class="score-area">
         <p class="score">Wins: <span id="wins">0</span></p>
