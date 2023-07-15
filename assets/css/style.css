@@ -1,4 +1,5 @@
 /*Global Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto+Condensed&display=swap');
 * {
     margin: 0;
     border: none;
@@ -11,6 +12,7 @@ body {
     background-color: white;
     color: black;
     text-align: center;
+    font-family: 'Lugrasimo', cursive, Helvetica, sans-serif ;
 }
 
 
@@ -24,6 +26,9 @@ body {
 
 .rules-area {
     padding: 10px;
+}
+.rules {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .element-area {
@@ -43,3 +48,6 @@ body {
 #losses {
     color: red;
 }
+
+/* Button Styles */
+
