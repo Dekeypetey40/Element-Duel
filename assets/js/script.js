@@ -1,13 +1,26 @@
-// Wait for the DOM to load
-// Event listeners to the start button
-document.addEventListener("DOMContentLoaded", function() {
-    let startButton = document.getElementById("begin-duel");
+/**
+ * Wait for the DOM to load
+ * Hide the Reset Button until the game starts
+ * Event listeners for the buttons
+ */
 
+document.addEventListener("DOMContentLoaded", function() {
+    //Hide the restart button
+    document.getElementById("restart").style.display = "none";
+    //start button event listener
+    //Hides the start button, shows restart
+    let startButton = document.getElementById("begin-duel");
     startButton.addEventListener("click", function() {
         document.getElementById("result").innerText = "Choose your element and your fate will be decided";
+        document.getElementById("begin-duel").style.display = "none";
+        document.getElementById("restart").style.display = "";
 
         })
-
+    //Inspired by code from stackoverflow
+    let restartButton = document.getElementById("restart");
+    restartButton.addEventListener("click", function() {
+        location.reload();
+    });
 });
 
 /* 
