@@ -1,5 +1,11 @@
-let playerNumber;
-let cpuNumber;
+
+let cpuElement;
+let playerElement;
+const elements = {
+    fire: "nature",
+    water: "fire",
+    nature: "water"
+}
 /**
  * Wait for the DOM to load
  * Hide the Reset Button until the game starts
@@ -7,8 +13,9 @@ let cpuNumber;
  * Waits for element choice to use run
  */
 document.addEventListener("DOMContentLoaded", function() {
-    //Hide the restart button
+    //Hide the restart and roll dice buttons
     document.getElementById("restart").style.display = "none";
+    document.getElementById("roll-dice").style.display = "none";
     //start button event listener
     //Hides the start button, shows restart
     
@@ -18,24 +25,31 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("begin-duel").style.display = "none";
         document.getElementById("restart").style.display = "";
 
-
-        })
-    //Listens for element button to be clicked 
-    //and assigns that element to player
-    //Calls the cpuChoice() function
-    let elementButtons = document.getElementsByClassName("element");
-    for (let element of elementButtons){
+        let elementButtons = document.getElementsByClassName("element");
+        for (let element of elementButtons){
         element.addEventListener("click", function() {
-        let playerElement = this.getAttribute("data-type"); 
+        playerElement = this.getAttribute("data-type"); 
         document.getElementById("player-choice").innerText = `Your choice: ${playerElement}`
         cpuChoice();
-        randomDiceRoll();
+        document.getElementById("roll-dice").style.display = "";
         
 
         }
         )}
 
+
+        })
+    //Listens for element button to be clicked 
+    //and assigns that element to player
+    //Calls the cpuChoice() function
+
     
+
+    //Event Listener for roll dice button
+    let rollDice = document.getElementById("roll-dice");
+    rollDice.addEventListener("click", function() {
+        randomDiceRoll()
+    })
     //Inspired by code from stackoverflow
     let restartButton = document.getElementById("restart");
     restartButton.addEventListener("click", function() {
@@ -51,10 +65,24 @@ document.addEventListener("DOMContentLoaded", function() {
 function runDuel() {
 
 }
-function playerChoice() {
-    
-}
+
 function cpuChoice() {
+    compChoice = Math.floor(Math.random() *3)
+    switch (compChoice) {
+        case 0:
+            cpuElement = "fire";
+            document.getElementById("cpu-choice").innerText = `Opponent choice: ${cpuElement}`;
+            break;
+        case 1:
+            cpuElement = "water";
+            document.getElementById("cpu-choice").innerText = `Opponent choice: ${cpuElement}`;
+            break;
+        case 2:
+            cpuElement = "nature";
+            document.getElementById("cpu-choice").innerText = `Opponent choice: ${cpuElement}`;
+            break;
+
+    }
     
 }
 /**
@@ -65,16 +93,12 @@ function cpuChoice() {
 function randomDiceRoll() {
     let playerNumber = Math.floor(Math.random() * 20) + 1;
     let cpuNumber = Math.floor(Math.random() * 20) + 1;
-    console.log(playerNumber);
-    console.log(cpuNumber);
+    compareElements();
+    
     
 }
 function compareElements() {
-    const elements = {
-        fire: "nature",
-        water: "fire",
-        nature: "water"
-    }
+    
 
     
 }
