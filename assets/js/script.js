@@ -1,11 +1,10 @@
 
-let cpuElement;
-let playerElement;
 const elements = {
     fire: "nature",
     water: "fire",
     nature: "water"
 }
+Object.keys(elements)
 /**
  * Wait for the DOM to load
  * Hide the Reset Button until the game starts
@@ -28,10 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
         let elementButtons = document.getElementsByClassName("element");
         for (let element of elementButtons){
         element.addEventListener("click", function() {
-        playerElement = this.getAttribute("data-type"); 
-        document.getElementById("player-choice").innerText = `Your choice: ${playerElement}`
+        document.getElementById("result").innerText = "Roll the dice and the winner will be determined";
+        let playerElement = this.getAttribute("data-type"); 
+        document.getElementById("player-choice").innerText = `${playerElement}`
         cpuChoice();
         document.getElementById("roll-dice").style.display = "";
+        return playerElement;
         
 
         }
@@ -48,7 +49,11 @@ document.addEventListener("DOMContentLoaded", function() {
     //Event Listener for roll dice button
     let rollDice = document.getElementById("roll-dice");
     rollDice.addEventListener("click", function() {
-        randomDiceRoll()
+
+        randomDiceRollPlayer();
+        randomDiceRollCpu();
+        compareElements();
+
     })
     //Inspired by code from stackoverflow
     let restartButton = document.getElementById("restart");
@@ -70,35 +75,51 @@ function cpuChoice() {
     compChoice = Math.floor(Math.random() *3)
     switch (compChoice) {
         case 0:
-            cpuElement = "fire";
+            cpuElement = Object.keys(elements)[0];
             document.getElementById("cpu-choice").innerText = `Opponent choice: ${cpuElement}`;
-            break;
+            return cpuElement;
         case 1:
-            cpuElement = "water";
+            cpuElement = Object.keys(elements)[1];
             document.getElementById("cpu-choice").innerText = `Opponent choice: ${cpuElement}`;
-            break;
+            return cpuElement;
         case 2:
-            cpuElement = "nature";
+            cpuElement = Object.keys(elements)[2];
             document.getElementById("cpu-choice").innerText = `Opponent choice: ${cpuElement}`;
-            break;
-
+            return cpuElement;
     }
     
 }
 /**
- * A random number between 1-20 is picked for both player
- * and computer and is stored in variable
- * before any bonuses are added.
+ * A random number between 1-20 is picked for the player
+ * is stored in a variable before any bonuses are added.
  */
-function randomDiceRoll() {
+function randomDiceRollPlayer() {
     let playerNumber = Math.floor(Math.random() * 20) + 1;
-    let cpuNumber = Math.floor(Math.random() * 20) + 1;
-    compareElements();
+    return playerNumber;
     
     
 }
-function compareElements() {
+/**
+ * A random number between 1-20 is picked for the computer
+ * and is stored in a variable before any bonuses are added.
+ */
+function randomDiceRollCpu() {
+    let cpuNumber = Math.floor(Math.random() * 20) + 1;
+    return cpuNumber;
     
+    
+}
+
+
+function compareElements() {
+cpuNumber = randomDiceRollPlayer();
+playerNumber = randomDiceRollPlayer();
+playerElement = document.getElementById("player-choice").innerText;
+console.log(cpuNumber);
+console.log(playerNumber);
+
+console.log(cpuElement);
+console.log(playerElement);
 
     
 }
