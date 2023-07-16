@@ -104,11 +104,7 @@ body {
     border-color: green;
     color: green;
 }
-.grey {
-    background-color: #445361;
-    border: 1px transparent;
-    border-radius: 20px;
-}
+
 .red:active,
 .red:hover {
     background-color: orange;
@@ -120,4 +116,15 @@ body {
 .green:active,
 .green:hover {
     background-color: lightgreen;
+}
+#begin-restart {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.grey {
+    background-color: #445361;
+    border: 1px transparent;
+    border-radius: 20px;
 }
