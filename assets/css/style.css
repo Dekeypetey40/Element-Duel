@@ -51,6 +51,11 @@ body {
     padding: 5vh 5vw;
     
 }
+#choices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 .score-area {
     background-color: rgb(217, 217, 248);
     display: inline-block;
