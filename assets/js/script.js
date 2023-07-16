@@ -140,7 +140,20 @@ if (elements[playerElement] === cpuElement) {
 
     
 }
-
+function chooseWinner(playerNumber, cpuNumber) {
+    const [finalPlayerNumber, finalCpuNumber] = compareElements();
+    if (finalPlayerNumber > finalCpuNumber) {
+        document.getElementById("result").innerText = `You have won! You rolled ${finalPlayerNumber}. Your opponent rolled ${finalCpuNumber}.`;
+        scoreTally();
+    } else if (finalCpuNumber > finalPlayerNumber) {
+        document.getElementById("result").innerText = `You have lost! You rolled ${finalPlayerNumber}. Your opponent rolled ${finalCpuNumber}.`;
+        scoreTally();
+    } else {
+        document.getElementById("result").innerText = `You have tied! You rolled both rolled ${finalPlayerNumber}.`;
+        scoreTally;
+    }
+    
+}
 function displayResult() {
     
 }
