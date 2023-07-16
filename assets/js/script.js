@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("restart").style.display = "none";
     //start button event listener
     //Hides the start button, shows restart
-    //Calls the cpuChoice() function
+    
     let startButton = document.getElementById("begin-duel");
     startButton.addEventListener("click", function() {
         document.getElementById("result").innerText = "Choose your element and your fate will be decided";
@@ -22,10 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     //Listens for element button to be clicked 
     //and assigns that element to player
+    //Calls the cpuChoice() function
     let elementButtons = document.getElementsByClassName("element");
     for (let element of elementButtons){
         element.addEventListener("click", function() {
         let playerElement = this.getAttribute("data-type"); 
+        document.getElementById("player-choice").innerText = `Your choice: ${playerElement}`
         cpuChoice();
         randomDiceRoll();
         
