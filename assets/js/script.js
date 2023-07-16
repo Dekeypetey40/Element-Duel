@@ -115,11 +115,20 @@ function compareElements() {
 cpuNumber = randomDiceRollPlayer();
 playerNumber = randomDiceRollPlayer();
 playerElement = document.getElementById("player-choice").innerText;
-console.log(cpuNumber);
-console.log(playerNumber);
 
-console.log(cpuElement);
-console.log(playerElement);
+
+if (elements[playerElement] === cpuElement) {
+    playerNumber += 5;
+    console.log(playerNumber)
+    console.log(cpuNumber);
+    return playerNumber;
+
+} else if (elements[cpuElement] === playerElement) {
+    cpuNumber += 5;
+    console.log(playerNumber)
+    console.log(cpuNumber);
+    return cpuNumber;
+}
 
     
 }
