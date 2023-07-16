@@ -4,6 +4,7 @@ const elements = {
     water: "fire",
     nature: "water"
 }
+
 Object.keys(elements)
 /**
  * Wait for the DOM to load
@@ -53,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         randomDiceRollPlayer();
         randomDiceRollCpu();
         compareElements();
+        chooseWinner();
 
     })
     //Inspired by code from stackoverflow
@@ -118,23 +120,27 @@ playerElement = document.getElementById("player-choice").innerText;
 
 
 if (elements[playerElement] === cpuElement) {
-    playerNumber += 5;
-    console.log(playerNumber)
-    console.log(cpuNumber);
-    return playerNumber;
+    const finalPlayerNumber = playerNumber += 5;
+    const finalCpuNumber = cpuNumber;
+    
+    return [finalPlayerNumber, finalCpuNumber]
 
 } else if (elements[cpuElement] === playerElement) {
-    cpuNumber += 5;
-    console.log(playerNumber)
-    console.log(cpuNumber);
-    return cpuNumber;
-}
+    const finalCpuNumber = cpuNumber += 5;
+    const finalPlayerNumber = playerNumber;
+    return [finalPlayerNumber, finalCpuNumber];
+} else {
+    const finalCpuNumber = cpuNumber;
+    const finalPlayerNumber = playerNumber;
+    return [finalPlayerNumber, finalCpuNumber];
+};
+
+
+
 
     
 }
-function chooseWinner() {
-    
-}
+
 function displayResult() {
     
 }
