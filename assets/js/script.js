@@ -112,7 +112,12 @@ function randomDiceRollCpu() {
     
 }
 
-
+/**
+ * Compares the elements chosen by player and computer.
+ * The one who picks an advantageous element is granted
+ * +5 onto their random number and then both random numbers
+ * are returned by the function in an array
+ */
 function compareElements() {
 cpuNumber = randomDiceRollPlayer();
 playerNumber = randomDiceRollPlayer();
@@ -133,30 +138,41 @@ if (elements[playerElement] === cpuElement) {
     const finalCpuNumber = cpuNumber;
     const finalPlayerNumber = playerNumber;
     return [finalPlayerNumber, finalCpuNumber];
-};
-
-
-
-
-    
+};   
 }
+/**
+ * The function looks at the final results to which
+ * is bigger or if they are even and then declares
+ * the result on the DOM and returns a winner variable
+ */
 function chooseWinner(playerNumber, cpuNumber) {
     const [finalPlayerNumber, finalCpuNumber] = compareElements();
     if (finalPlayerNumber > finalCpuNumber) {
         document.getElementById("result").innerText = `You have won! You rolled ${finalPlayerNumber}. Your opponent rolled ${finalCpuNumber}.`;
-        scoreTally();
+        let winner = "player"
+        scoreTally(winner);
+        return winner;
     } else if (finalCpuNumber > finalPlayerNumber) {
         document.getElementById("result").innerText = `You have lost! You rolled ${finalPlayerNumber}. Your opponent rolled ${finalCpuNumber}.`;
-        scoreTally();
+        let winner = "cpu"
+        scoreTally(winner);
+        return winner;
     } else {
         document.getElementById("result").innerText = `You have tied! You rolled both rolled ${finalPlayerNumber}.`;
-        scoreTally;
     }
     
 }
-function displayResult() {
-    
-}
-function scoreTally() {
-    
+/**
+ * The function reads the winner variable which
+ * says if the player won or lost. A point is 
+ * then added to the correct tally.
+ */
+function scoreTally(winner) {
+    let oldWins = parseInt(document.getElementById("wins").innerText);
+    let oldLosses = parseInt(document.getElementById("losses").innerText);
+    if (winner === "player") {
+        document.getElementById("wins").innerText = ++oldWins;
+    } else if (winner === "cpu") {
+        document.getElementById("losses").innerText = ++oldLosses;
+    }
 }
