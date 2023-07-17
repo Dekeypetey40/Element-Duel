@@ -17,11 +17,16 @@ body {
 
 /* Rules Area Styles */
 
-ol, ul {
-    display: inline-block;
+.rules {
+    list-style: none;
 
 }
-
+.rules li {
+    padding: 5px;
+}
+li:before {
+    content:"• ";
+}
 /* Game Area Styles */
 .game-area {
     background-color: rgb(217, 217, 248);
