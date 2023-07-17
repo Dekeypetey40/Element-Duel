@@ -148,4 +148,8 @@ ol, ul {
         height: 75px;
         font-size: 2rem;
     }
+.grey {
+    width: 6rem;
+    height: 3rem;
+}
 }
