@@ -16,10 +16,10 @@ body {
 }
 
 /* Rules Area Styles */
-.rules-area {
-}
+
 ol, ul {
-    list-style-position: inside;
+    display: inline-block;
+
 }
 
 /* Game Area Styles */
@@ -147,8 +147,11 @@ ol, ul {
         border: 7.5px solid;
         width: 75px;
         height: 75px;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
+.button-text {
+    font-size: 12px;
+}
 .grey {
     width: 6rem;
     height: 3rem;
