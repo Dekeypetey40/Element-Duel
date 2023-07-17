@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         for (let element of elementButtons){
         element.addEventListener("click", function() {
         document.getElementById("result").innerText = "Roll the dice and the winner will be determined";
+        document.getElementById("cpu-choice").innerText = ` ?`;
         let playerElement = this.getAttribute("data-type"); 
         document.getElementById("player-choice").innerText = `${playerElement}`
         cpuChoice();
@@ -50,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
     //Event Listener for roll dice button
     let rollDice = document.getElementById("roll-dice");
     rollDice.addEventListener("click", function() {
-        document.getElementById("cpu-choice").innerText = "?"
         randomDiceRollPlayer();
         randomDiceRollCpu();
         compareElements();
