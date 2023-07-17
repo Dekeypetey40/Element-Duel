@@ -68,15 +68,14 @@ li:before {
     margin-top: 20px;
 }
 .score-area {
-    background-color: rgb(217, 217, 248);
     display: inline-block;
     padding: 10px;
 }
 #wins {
-    color:green
+    color:rgb(5, 99, 5)
 }
 #losses {
-    color: red;
+    color: darkred;
 }
 
 /* Button Styles */
