@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("result").innerText = "Choose your element and your fate will be decided";
         document.getElementById("begin-duel").style.display = "none";
         document.getElementById("restart").style.display = "";
-
+//Calls the cpuChoice() function
         let elementButtons = document.getElementsByClassName("element");
         for (let element of elementButtons){
         element.addEventListener("click", function() {
@@ -43,14 +43,14 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     //Listens for element button to be clicked 
     //and assigns that element to player
-    //Calls the cpuChoice() function
+    
 
     
 
     //Event Listener for roll dice button
     let rollDice = document.getElementById("roll-dice");
     rollDice.addEventListener("click", function() {
-
+        document.getElementById("cpu-choice").innerText = "?"
         randomDiceRollPlayer();
         randomDiceRollCpu();
         compareElements();
@@ -75,18 +75,16 @@ function runDuel() {
 
 function cpuChoice() {
     compChoice = Math.floor(Math.random() *3)
+    let cpuElement;
     switch (compChoice) {
         case 0:
             cpuElement = Object.keys(elements)[0];
-            document.getElementById("cpu-choice").innerText = `Opponent choice: ${cpuElement}`;
             return cpuElement;
         case 1:
             cpuElement = Object.keys(elements)[1];
-            document.getElementById("cpu-choice").innerText = `Opponent choice: ${cpuElement}`;
             return cpuElement;
         case 2:
             cpuElement = Object.keys(elements)[2];
-            document.getElementById("cpu-choice").innerText = `Opponent choice: ${cpuElement}`;
             return cpuElement;
     }
     
@@ -122,6 +120,7 @@ function compareElements() {
 cpuNumber = randomDiceRollPlayer();
 playerNumber = randomDiceRollPlayer();
 playerElement = document.getElementById("player-choice").innerText;
+cpuElement = cpuChoice();
 
 
 if (elements[playerElement] === cpuElement) {
@@ -141,11 +140,13 @@ if (elements[playerElement] === cpuElement) {
 };   
 }
 /**
- * The function looks at the final results to which
- * is bigger or if they are even and then declares
- * the result on the DOM and returns a winner variable
+ * The function first reveals what element the cpu picked, then  
+ * looks at the final results to which is bigger or if they are even 
+ * and then declares the result on the DOM and returns a winner variable
  */
 function chooseWinner(playerNumber, cpuNumber) {
+    cpuElement = cpuChoice();
+    document.getElementById("cpu-choice").innerText = ` ${cpuElement}`;
     const [finalPlayerNumber, finalCpuNumber] = compareElements();
     if (finalPlayerNumber > finalCpuNumber) {
         document.getElementById("result").innerText = `You have won! You rolled ${finalPlayerNumber}. Your opponent rolled ${finalCpuNumber}.`;
