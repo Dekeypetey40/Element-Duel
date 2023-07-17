@@ -67,12 +67,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-
-
-function runDuel() {
-
-}
-
 function cpuChoice() {
     compChoice = Math.floor(Math.random() *3)
     let cpuElement;
@@ -122,7 +116,8 @@ playerNumber = randomDiceRollPlayer();
 playerElement = document.getElementById("player-choice").innerText;
 cpuElement = cpuChoice();
 
-
+/*Learned how to make js return multiple values from  
+https://www.scaler.com/topics/javascript-return-multiple-values/ */
 if (elements[playerElement] === cpuElement) {
     const finalPlayerNumber = playerNumber += 5;
     const finalCpuNumber = cpuNumber;
