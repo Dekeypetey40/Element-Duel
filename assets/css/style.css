@@ -65,6 +65,7 @@ ol, ul {
 .score-area {
     background-color: rgb(217, 217, 248);
     display: inline-block;
+    padding: 10px;
 }
 #wins {
     color:green
@@ -152,4 +153,13 @@ ol, ul {
     width: 6rem;
     height: 3rem;
 }
+.score-area {
+    margin-top: 10px;
+}
+}
+
+@media (max-width: 320px){
+    h1 {
+        font-size: 1.5em;
+    }
 }
