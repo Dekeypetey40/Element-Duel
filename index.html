@@ -16,7 +16,7 @@
     </h1>
     
     <div class="rules-area">
-        <h3>Game Rules</h3>
+        <h3 class="rules-heading">Game Rules</h3>
         <ul class="rules">
             <li>Fire is super effective against nature</li>
             <li>Water is super effective against Fire</li>
@@ -26,28 +26,29 @@
             <li>If you and the computer pick the same element no bonuses are added</li>
         </ul>
     
-        <h3>How To Play</h3>
+        <h3 class="rules-heading">How To Play</h3>
         <ol class="rules">
             <li>Click the Begin Duel button </li>
-            <li>Select your element and the dice will be rolled</li>
+            <li>Select your element </li>
+            <li>Click the roll dice button</li>
         </ol>
     </div>
     <div class="game-area">
         <div class="element-area">
             <div>
-            <button data-type="fire" class="button big red element">
+            <button data-type="fire" class="button big red element" aria-label="Click the fire element button to choose fire as your element">
                 <i class="fa-solid fa-fire"></i>
             </button>
             <p class="button-text">Fire</p>
             </div>
             <div>
-            <button data-type="water" class="button big blue element">
+            <button data-type="water" class="button big blue element" aria-label="Click the water element button to choose water as your element">
                 <i class="fa-solid fa-droplet"></i>
             </button>
             <p class="button-text">Water</p>
             </div>
             <div>
-            <button data-type="nature" class="button big green element">
+            <button data-type="nature" class="button big green element" aria-label="Click the nature element button to choose nature as your element">
                 <i class="fa-solid fa-seedling"></i>
             </button>
             <p class="button-text">Nature</p>
@@ -62,9 +63,15 @@
             </div>
         </div>
         <div id="begin-restart">
-        <button id="roll-dice" class="button grey">Roll Dice</button>
-        <button id="begin-duel" class="button grey">Begin Duel</button>
-        <button id="restart" class="button grey">Reset</button>
+        <button id="roll-dice" class="button grey" aria-label="Click the roll dice button to roll the dice">
+            Roll Dice
+        </button>
+        <button id="begin-duel" class="button grey" aria-label="Click the begin duel button to start the game">
+            Begin Duel
+        </button>
+        <button id="restart" class="button grey" aria-label="Click the reset button to clear the score and reload the page">
+            Reset
+        </button>
         </div>
     </div>
     <div class="score-area">
