@@ -16,17 +16,29 @@ body {
 }
 
 /* Rules Area Styles */
+.rules-heading {
+    margin-top: 20px;
+}
+.rules-area-container {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: rgb(217, 217, 248);
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+}
+.cell {
+    width: 48%;
+}
 
 .rules {
-    list-style: none;
-
+    font-family: 'Roboto Condensed', sans-serif;
+    list-style-position: inside;
 }
 .rules li {
     padding: 5px;
 }
-li:before {
-    content:"• ";
-}
+
 /* Game Area Styles */
 .game-area {
     background-color: rgb(217, 217, 248);
@@ -36,12 +48,8 @@ li:before {
     margin-right: 10vw;
 }
 
-.rules-area {
-    padding: 10px;
-}
-.rules {
-    font-family: 'Roboto Condensed', sans-serif;
-}
+
+
 
 .element-area {
     
@@ -168,5 +176,9 @@ li:before {
 @media (max-width: 320px){
     h1 {
         font-size: 1.5em;
+    }
+    .choices {
+        display: flex;
+        flex-direction: column;
     }
 }
