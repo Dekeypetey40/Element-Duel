@@ -1,4 +1,4 @@
-# _Happy Dog_
+# _Element Duel_
 
 ![Site on different devices](assets/images/am-i-responsive.png)
 
