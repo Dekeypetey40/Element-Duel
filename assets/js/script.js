@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("cpu-choice").innerText = ` ?`;
         let playerElement = this.getAttribute("data-type"); 
         document.getElementById("player-choice").innerText = `${playerElement}`
-        cpuChoice();
         document.getElementById("roll-dice").style.display = "";
         return playerElement;
         
@@ -52,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
     //Event Listener for roll dice button
     let rollDice = document.getElementById("roll-dice");
     rollDice.addEventListener("click", function() {
-        compareElements();
         chooseWinner();
 
     })
@@ -86,21 +84,12 @@ function cpuChoice() {
  * A random number between 1-20 is picked for the player
  * is stored in a variable before any bonuses are added.
  */
-function randomDiceRollPlayer() {
-    let playerNumber = Math.floor(Math.random() * 20) + 1;
-    console.log(playerNumber);
-    return playerNumber;
+function randomDiceRoll() {
+    return Math.ceil(Math.random() * 20);
     
     
 }
-/**
- * A random number between 1-20 is picked for the computer
- * and is stored in a variable before any bonuses are added.
- */
-function randomDiceRollCpu() {
-    let cpuNumber = Math.floor(Math.random() * 20) + 1;
-    console.log(cpuNumber);
-    return cpuNumber;
+
     
     
 }
@@ -111,34 +100,40 @@ function randomDiceRollCpu() {
  * +5 onto their random number and then both random numbers
  * are returned by the function in an array
  */
-function compareElements() {
-cpuNumber = randomDiceRollPlayer();
-playerNumber = randomDiceRollPlayer();
-playerElement = document.getElementById("player-choice").innerText;
-cpuElement = cpuChoice();
+function compareElements(playerElement, cpuElement) {
+const cpuNumber = randomDiceRoll();
+const playerNumber = randomDiceRoll();
+const playerRollElement = document.getElementById("players-roll");
+const cpuRollElement = document.getElementById("cpu-roll");
+const extraPointsElement = document.getElementById("extra-points");
+playerRollElement.innerText = playerNumber;
+cpuRollElement.innerText = cpuNumber;
 
 /*Learned how to make js return multiple values from  
 https://www.scaler.com/topics/javascript-return-multiple-values/ */
 if (elements[playerElement] === cpuElement) {
-    const finalPlayerNumber = playerNumber += 5;
+    const finalPlayerNumber = playerNumber + 5;
     const finalCpuNumber = cpuNumber;
     console.log(finalPlayerNumber);
     console.log(finalCpuNumber);
+    extraPointsElement.innerText= `${playerElement} wins over ${cpuElement}. You get +5!`
+    
     
     return [finalPlayerNumber, finalCpuNumber]
 
-} else if (elements[cpuElement] === playerElement) {
+} else if (cpuElement === playerElement) {
     const finalCpuNumber = cpuNumber;
     const finalPlayerNumber = playerNumber;
     console.log(finalPlayerNumber);
     console.log(finalCpuNumber);
     return [finalPlayerNumber, finalCpuNumber];
 } else {
-    const finalCpuNumber = cpuNumber += 5;
+    const finalCpuNumber = cpuNumber + 5;
     const finalPlayerNumber = playerNumber;
     console.log(finalPlayerNumber);
     console.log(finalCpuNumber);
     return [finalPlayerNumber, finalCpuNumber];
+    extraPointsElement.innerText = `Equal Elements`
     
 };   
 }
