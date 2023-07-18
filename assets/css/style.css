@@ -9,16 +9,25 @@ html {
     scroll-behavior: smooth;
   }
 body {
-    background-color: white;
+    background-color: rgb(27, 91, 175);
     color: black;
     text-align: center;
     font-family: 'Lugrasimo', cursive, Helvetica, sans-serif ;
 }
-
-/* Rules Area Styles */
-.rules-heading {
+/* Heading backgrounds*/
+h1 {
     margin-top: 20px;
 }
+.heading-div {
+    background-color: rgb(217, 217, 248);
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.rules-heading {
+    padding-top: 20px;
+}
+/* Rules Area Styles */
+
 .rules-area-container {
     display: flex;
     margin-bottom: 20px;
@@ -78,6 +87,7 @@ body {
 .score-area {
     display: inline-block;
     padding: 10px;
+    padding-top: 40px;
 }
 #wins {
     color:rgb(5, 99, 5)
