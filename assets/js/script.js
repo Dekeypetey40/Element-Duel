@@ -21,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let startButton = document.getElementById("begin-duel");
     startButton.addEventListener("click", function() {
-        document.getElementById("result").innerText = "Choose your element and your fate will be decided";
+        document.getElementById("result").innerText = "Choose your element";
         document.getElementById("begin-duel").style.display = "none";
         document.getElementById("restart").style.display = "";
+ //Listens for element button to be clicked 
+//and assigns that element to player
 //Calls the cpuChoice() function
         let elementButtons = document.getElementsByClassName("element");
         for (let element of elementButtons){
@@ -42,8 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         })
-    //Listens for element button to be clicked 
-    //and assigns that element to player
+   
     
 
     
@@ -51,8 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
     //Event Listener for roll dice button
     let rollDice = document.getElementById("roll-dice");
     rollDice.addEventListener("click", function() {
-        randomDiceRollPlayer();
-        randomDiceRollCpu();
         compareElements();
         chooseWinner();
 
@@ -89,6 +88,7 @@ function cpuChoice() {
  */
 function randomDiceRollPlayer() {
     let playerNumber = Math.floor(Math.random() * 20) + 1;
+    console.log(playerNumber);
     return playerNumber;
     
     
@@ -99,6 +99,7 @@ function randomDiceRollPlayer() {
  */
 function randomDiceRollCpu() {
     let cpuNumber = Math.floor(Math.random() * 20) + 1;
+    console.log(cpuNumber);
     return cpuNumber;
     
     
@@ -121,17 +122,24 @@ https://www.scaler.com/topics/javascript-return-multiple-values/ */
 if (elements[playerElement] === cpuElement) {
     const finalPlayerNumber = playerNumber += 5;
     const finalCpuNumber = cpuNumber;
+    console.log(finalPlayerNumber);
+    console.log(finalCpuNumber);
     
     return [finalPlayerNumber, finalCpuNumber]
 
 } else if (elements[cpuElement] === playerElement) {
-    const finalCpuNumber = cpuNumber += 5;
-    const finalPlayerNumber = playerNumber;
-    return [finalPlayerNumber, finalCpuNumber];
-} else {
     const finalCpuNumber = cpuNumber;
     const finalPlayerNumber = playerNumber;
+    console.log(finalPlayerNumber);
+    console.log(finalCpuNumber);
     return [finalPlayerNumber, finalCpuNumber];
+} else {
+    const finalCpuNumber = cpuNumber += 5;
+    const finalPlayerNumber = playerNumber;
+    console.log(finalPlayerNumber);
+    console.log(finalCpuNumber);
+    return [finalPlayerNumber, finalCpuNumber];
+    
 };   
 }
 /**
