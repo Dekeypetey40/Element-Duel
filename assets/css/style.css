@@ -198,6 +198,9 @@ footer p {
   .score-area {
     margin-top: 10px;
   }
+  footer {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 320px) {
