@@ -81,6 +81,12 @@ h2 {
 .result-area {
   padding: 5vh 1vw;
 }
+#result-headings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
 #choices {
   display: flex;
   justify-content: space-between;
