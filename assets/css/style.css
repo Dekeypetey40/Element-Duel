@@ -156,6 +156,15 @@ h1 {
     border: 1px transparent;
     border-radius: 20px;
 }
+/*Footer Styles*/
+footer p{
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(217, 217, 248);
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
 
 /* Media Queries */
 @media (max-width: 500px) {
