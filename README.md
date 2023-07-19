@@ -96,18 +96,8 @@ Wireframes were used in the beggining stages of the design phase.
 ## Bugs
 
 ## Solved bugs
-  - My ethos section on the homepage became unresponsive to different screen sizes.
-    - I solved it by realizing I had inputted the incorrect id in my media query.
-  - My background image was not appearing on my github page version of the site.
-    - This was solved by inputting a relative filepath to the image.
-  - My logo was underlining when it should not on all pages except the index.html. 
-    - I realized I had forgotten to put an id on the a element for my sign up, gallery, and response pages. 
-  - My performance on my website was not optimal.
-    - I solved this by compressing all of my image files. 
-  - My backgrounds on my homepage where getting cropped on the right side on mobile screens.
-    - My footer was wider than the container for the rest of the page so I shrunk my footer to the same width. 
-  - My images looked warped at certain screen widths. When I fixed that problem they became cropped in an unappealing way.
-    - I fixed this by shrinking the width of the entire gallery section at certain screen sizes. 
+  - My compare elements function did not work as it should and was not adding 5 to the player who had an advantageous element. This was largely due to the fact that I had called two functions multiple times. Once this was fixed the game worked as it should. 
+  - When I reformatted my HTML file to be easier to read and then tried to adapt my js file to it the game ceased to function as it should. I undid all my changes and redid the process, checking everything was working with each change I made. This process resulted with the desired effect. 
 
 
   ***
@@ -117,27 +107,27 @@ Wireframes were used in the beggining stages of the design phase.
 
 | feature | action | expected result | tested | passed | comments |
 | --- | --- | --- | --- | --- | --- |
-| Navbar | | | | | |
-| Logo |Click on the logo |The user is directed to the home page |yes |yes | |
-| Home | Click on the "Home" link | The user is directed to the main page | Yes | Yes | - |
-| Gallery | Click on the "Gallery" link | The user is directed to the gallery page | Yes | Yes | - |
-| Sign Up | Click on the "Sign up" link | The user is directed to the sign up page | Yes | Yes | - |
-| Footer | | | | | |
-| Instagram icon in the footer | Click on the Instagram icon | The user is directed to the Instagram page | Yes | Yes | - |
-| Facebook icon in the footer | Click on the Facebook icon | The user is directed to the Facebook page | Yes | Yes | - |
-| Twitter icon in the footer | Click on the Twitter icon | The user is directed to the Twitter page | Yes | Yes | - |
-| YouTube icon in the footer | Click on the YouTube icon | The user is directed to the YouTube page | Yes | Yes | - |
-| Home page | | | | | |
-| Gallery page | | | | | |
-| Back to top button | Click on the back to top button  | The user is directed to the top of the gallery page | yes | yes | |
-| Sign Up page | | | | | |
-| First name input | Enter text | Text is entered | Yes | Yes | If user doesn't enter any text an error message appears |
-| Last name input | Enter text | Text is entered | Yes | Yes | If user doesn't enter any text an error message appears |
-| Email input | Enter email | Email is entered | Yes | Yes | If user doesn't enter email an error message appears. If user enters an invalid email, the error message appears |
-| Choose a service checkbox | Click on the checkbox | The checkbox is checked | Yes | Yes | If user does not check a box an error message appears |
-| "Submit" button | Click on the "Submit" button | The user is redirected to the response page | Yes | Yes | - |
-| Response page | | | | | |
-| Return to home button | Click on the return to home page link | The user is redirected to the home page | Yes | Yes | - |
+| Element choice Area | | | | | |
+| Element Header | Click the Begin Duel button | InnerText changes from "your fate is yet to be decided" to "choose your element" | Yes | Yes |  |
+| Element Header | Click the Roll Dice button | InnerText changes from "choose your element" to one of two options "x element is super effective against y element" or "equal elements" | Yes | Yes |  |
+| Fire element button | Click the button | fire becomes the players chosen element, cpuChoice is run and the roll dice button appears | Yes | Yes | If user doesn't choose an element the roll dice button does not appear. |
+| Water element button | Click the button | water becomes the players chosen element, cpuChoice is run and and the roll dice button appears | Yes | Yes | If user doesn't choose an element the roll dice button does not appear. |
+| Nature element button | Click the button | nature becomes the players chosen element, cpuChoice is run and and the roll dice button appears | Yes | Yes | If user doesn't choose an element the roll dice button does not appear. |
+| Results area | | | | | |
+| Player Side | | | | | |
+| Your element | Click on an element button  | Your chosen element appears beside "Your element:"  | yes | yes | |
+| You rolled | Click on the roll dice button  | Your random number before bonuses appears beside "You rolled:" | yes | yes | |
+| Your bonus | Click on the roll dice button  | A "+5" or "0" appears beside "Your bonus:" depending on if you picked an advantageous element or not | yes | yes | |
+| Your final score | Click on the roll dice button  | Your final score after bonuses appears beside "Your final score:" | yes | yes | |
+| Opponent Side | | | | |All of these were tested in the same way and have the same expected results except for Opponent Element |
+| Opponent Element | Click on an element button and then roll dice  | First cpuChoice is run and a "?" appears beside Opponent element: and then the opponenets element is revealed | yes | yes | |
+| Other button area | | | | | |
+| Begin Duel | Click the button | You are prompted to choose an element, the button disappears and the reset button appears | Yes | Yes | If you do not click this button you may not select an element  |
+| Reset | Click the button | The page reloads | Yes | Yes |  |
+| Roll Dice | Click the button | The results of the game are determined and appear in the correct places. | Yes | Yes |  |
+| Score Area | | | | | |
+| Wins| Test the game until the player wins | 1 is added to the player's wins tally | Yes | Yes | |
+| Losses| Test the game until the computer wins | 1 is added to the player's losses tally | Yes | Yes | |
 
 ---
 
