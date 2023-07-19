@@ -6,93 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Element Duel is a chance based dice rolling game">
     <meta name="keywords" content="Element Duel, element, duel, game, chance">
-    <meta name="author" content="Kai Michael-Mikhail"> 
+    <meta name="author" content="Kai Michael-Mikhail">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <title>Element Duel</title>
 </head>
 
 <body>
-    
+    <header>
         <h1 class="heading">
             <i class="fa-solid fa-dice-d20 logo"></i> Element Duel <i class="fa-solid fa-dice-d20 logo"></i>
         </h1>
+    </header>
+
+    <main>
+
 
         <h2 class="rules-heading">Game Rules</h2>
-    <div class="rules-area-container">
-        <div class="box1 cell">
-            <ul class="rules">
-                <li>Fire is super effective against nature</li>
-                <li>Water is super effective against Fire</li>
-                <li>Nature is super effective against Water</li>
-            </ul>
-        </div>
-        <div class="box2 cell">
-            <ul class="rules">
-                <li>Both player and computer roll a 20 sided die</li>
-                <li>The player who choses a super effective element add 5 to their roll</li>
-                <li>If you and the computer pick the same element no bonuses are added</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="game-area">
-        <div class="element-area">
-            <div>
-                <button data-type="fire" class="button big red element"
-                    aria-label="Click the fire element button to choose fire as your element">
-                    <i class="fa-solid fa-fire"></i>
-                </button>
-                <p class="button-text">Fire</p>
+        <div class="rules-area-container">
+            <div class="box1 cell">
+                <ul class="rules">
+                    <li>Fire is super effective against nature</li>
+                    <li>Water is super effective against Fire</li>
+                    <li>Nature is super effective against Water</li>
+                </ul>
             </div>
-            <div>
-                <button data-type="water" class="button big blue element"
-                    aria-label="Click the water element button to choose water as your element">
-                    <i class="fa-solid fa-droplet"></i>
-                </button>
-                <p class="button-text">Water</p>
-            </div>
-            <div>
-                <button data-type="nature" class="button big green element"
-                    aria-label="Click the nature element button to choose nature as your element">
-                    <i class="fa-solid fa-seedling"></i>
-                </button>
-                <p class="button-text">Nature</p>
+            <div class="box2 cell">
+                <ul class="rules">
+                    <li>Both player and computer roll a 20 sided die</li>
+                    <li>The player who choses a super effective element add 5 to their roll</li>
+                    <li>If you and the computer pick the same element no bonuses are added</li>
+                </ul>
             </div>
         </div>
 
-        <div class="result-area">
-            <p id="extra-points"></p>
-            <p>You rolled: <span id="players-roll"></span></p>
-            <p>CPU rolled: <span id="cpu-roll"></span></p>
-            <span id="result">Your Fate Is Yet To Be Decided</span>
-            <div id="choices">
+        <div class="game-area">
+            <div class="element-area">
                 <div>
-                    <p>Your choice: <span id="player-choice"> </span></p>
+                    <button data-type="fire" class="button big red element"
+                        aria-label="Click the fire element button to choose fire as your element">
+                        <i class="fa-solid fa-fire"></i>
+                    </button>
+                    <p class="button-text">Fire</p>
                 </div>
                 <div>
-                    <p>Opponent Choice:<span id="cpu-choice"></span></p>
+                    <button data-type="water" class="button big blue element"
+                        aria-label="Click the water element button to choose water as your element">
+                        <i class="fa-solid fa-droplet"></i>
+                    </button>
+                    <p class="button-text">Water</p>
+                </div>
+                <div>
+                    <button data-type="nature" class="button big green element"
+                        aria-label="Click the nature element button to choose nature as your element">
+                        <i class="fa-solid fa-seedling"></i>
+                    </button>
+                    <p class="button-text">Nature</p>
                 </div>
             </div>
-        </div>
-        <div id="begin-restart">
-            <button id="roll-dice" class="button grey" aria-label="Click the roll dice button to roll the dice">
-                Roll Dice
-            </button>
-            <button id="begin-duel" class="button grey" aria-label="Click the begin duel button to start the game">
-                Begin Duel
-            </button>
-            <button id="restart" class="button grey"
-                aria-label="Click the reset button to clear the score and reload the page">
-                Reset
-            </button>
-        </div>
-        <div class="score-area">
-            <p class="score">Wins: <span id="wins">0</span></p>
-            <p class="score">Losses: <span id="losses">0</span></p>
-        </div>
-    </div>
 
+            <div class="result-area">
+                <p id="extra-points"></p>
+                <p>You rolled: <span id="players-roll"></span></p>
+                <p>CPU rolled: <span id="cpu-roll"></span></p>
+                <span id="result">Your Fate Is Yet To Be Decided</span>
+                <div id="choices">
+                    <div>
+                        <p>Your choice: <span id="player-choice"> </span></p>
+                    </div>
+                    <div>
+                        <p>Opponent Choice:<span id="cpu-choice"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="begin-restart">
+                <button id="roll-dice" class="button grey" aria-label="Click the roll dice button to roll the dice">
+                    Roll Dice
+                </button>
+                <button id="begin-duel" class="button grey" aria-label="Click the begin duel button to start the game">
+                    Begin Duel
+                </button>
+                <button id="restart" class="button grey"
+                    aria-label="Click the reset button to clear the score and reload the page">
+                    Reset
+                </button>
+            </div>
+            <div class="score-area">
+                <p class="score">Wins: <span id="wins">0</span></p>
+                <p class="score">Losses: <span id="losses">0</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            This project was made for educational purposes by
+            <a id="github" href="https://github.com/Dekeypetey40?tab=repositories" target="_blank"
+              rel="noopener noreferrer">Kai
+              Michael-Mikhail</a>
+            2023
+          </p>
+    </footer>
     <script src="https://kit.fontawesome.com/2032da95d4.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
