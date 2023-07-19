@@ -14,13 +14,13 @@ This website runs a game called Element Duel created by myself, Kai Michael-Mikh
 The website provides an interactive experience where the user can play against the computer as much or as little as they wish. This was made as my second project as part of Code Institue's Full Stack Developer course.
 
 ## Technologies used
-- HTML [HTML link](https://en.wikipedia.org/wiki/HTML)
-- CSS [CSS link](https://en.wikipedia.org/wiki/CSS)
-- Javascript [Javascript link](https://en.wikipedia.org/wiki/JavaScript)
-- Font Awesome icons [Font Awesome link](https://fontawesome.com/)
-- Google fonts [Google Fonts link](https://fonts.google.com/)
-- VSCode was the main editor used to write my code [VScode link](https://code.visualstudio.com/)
-- Balsamiq was used to make wireframes in the design process [Balsamic link](https://balsamiq.com/)
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [VScode](https://code.visualstudio.com/) was the editor used to write my code.
+- [Balsamic](https://balsamiq.com/) was used to make wireframes in the design process.
 
 ---
 
@@ -154,6 +154,10 @@ The site was deployed to GitHub pages. The following steps were taken to do so:
 6. Once the main branch has been selected, click on the save button in the branch section. Wait for the link to be generated and then refresh the page.
 
 ---
-Credits
+# Credits
+
+
+## Content
+
 ## Media
   - Icon for my website was taken from [Flaticon](https://www.flaticon.com/)
