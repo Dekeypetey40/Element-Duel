@@ -132,24 +132,33 @@ Waits for element choice to use run
    * and then declares the result on the DOM and returns a winner variable
    */
   function chooseWinner(playerNumber, cpuNumber) {
-    cpuElement = cpuChoice();
+    const cpuElement = cpuChoice();
     document.getElementById("cpu-choice").innerText = ` ${cpuElement}`;
-    const [finalPlayerNumber, finalCpuNumber] = compareElements();
+    const playerElement = document.getElementById("player-choice").innerText;
+    const [finalPlayerNumber, finalCpuNumber] = compareElements(
+      playerElement,
+      cpuElement
+    );
     if (finalPlayerNumber > finalCpuNumber) {
-        document.getElementById("result").innerText = `You have won! You rolled ${finalPlayerNumber}. Your opponent rolled ${finalCpuNumber}.`;
-        let winner = "player"
-        scoreTally(winner);
-        return winner;
+      document.getElementById(
+        "result"
+      ).innerText = `You have won! Your final score is ${finalPlayerNumber}. Your opponent's final score ${finalCpuNumber}.`;
+      let winner = "player";
+      scoreTally(winner);
+      return winner;
     } else if (finalCpuNumber > finalPlayerNumber) {
-        document.getElementById("result").innerText = `You have lost! You rolled ${finalPlayerNumber}. Your opponent rolled ${finalCpuNumber}.`;
-        let winner = "cpu"
-        scoreTally(winner);
-        return winner;
+      document.getElementById(
+        "result"
+      ).innerText = `You have lost! Your final score is ${finalPlayerNumber}. Your opponent's final score ${finalCpuNumber}.`;
+      let winner = "cpu";
+      scoreTally(winner);
+      return winner;
     } else {
-        document.getElementById("result").innerText = `You have tied! You rolled both rolled ${finalPlayerNumber}.`;
+      document.getElementById(
+        "result"
+      ).innerText = `You have tied! You rolled both rolled ${finalPlayerNumber}.`;
     }
-    
-}
+  }
   /**
    * The function reads the winner variable which
    * says if the player won or lost. A point is
