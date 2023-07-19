@@ -91,6 +91,7 @@ Wireframes were used in the beggining stages of the design phase.
 * Lighthouse in Chrome Developer Tools was used. Initially, there was a low accessibility rating. The cause of this was a lack of aria-labels on the buttons and some html semantic structure. After this was fixed there were no issues.
 - Element Duel main page ![Main Page lighthouse](assets/images/lighthouse-element-duel.png)
 * [JSHint](https://jshint.com/) was run to check my javascript code. It detected two functions called twice and some missing semicolons. After this no errors were found. 
+![JS Validation](assets/images/js-hint-ed.png)
 
 
 ## Bugs
