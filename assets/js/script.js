@@ -8,6 +8,9 @@ const startButton = document.getElementById("begin-duel");
 const resultElement = document.getElementById("result");
 const restartButton = document.getElementById("restart");
 const rollDice = document.getElementById("roll-dice");
+const elementHeader = document.getElementById("element-heading");
+const playerBonus = document.getElementById("players-bonus");
+const cpuBonus = document.getElementById("cpu-bonus");
   
 /*
 Wait for the DOM to load
@@ -23,7 +26,7 @@ Waits for element choice to use run
     //start button event listener
     //Hides the start button, shows restart
     startButton.addEventListener("click", function () {
-      resultElement.innerText = "Choose your element";
+      elementHeader.innerText = "Choose your element";
       startButton.style.display = "none";
       document.getElementById("restart").style.display = "";
       //Listens for element button to be clicked
@@ -31,7 +34,7 @@ Waits for element choice to use run
       let elementButtons = document.getElementsByClassName("element");
       for (let element of elementButtons) {
         element.addEventListener("click", function () {
-          document.getElementById("result").innerText =
+          resultElement.innerText =
             "Roll the dice and the winner will be determined";
           document.getElementById("cpu-choice").innerText = ` ?`;
           let playerElement = this.getAttribute("data-type");
@@ -103,25 +106,29 @@ Waits for element choice to use run
     if (elements[playerElement] === cpuElement) {
       const finalPlayerNumber = playerNumber + 5;
       const finalCpuNumber = cpuNumber;
-      console.log(finalPlayerNumber);
-      console.log(finalCpuNumber);
-      extraPointsElement.innerText = `${playerElement} wins over ${cpuElement}. You get 5 extra points.`;
+      playerBonus.innerText = ` +5`;
+      cpuBonus.innerText = ` 0`
+      elementHeader.innerText = `${playerElement} is supereffective against ${cpuElement}!`;
   
       return [finalPlayerNumber, finalCpuNumber];
     } else if (cpuElement === playerElement) {
       const finalCpuNumber = cpuNumber;
       const finalPlayerNumber = playerNumber;
+      playerBonus.innerText = ` 0`;
+      cpuBonus.innerText = ` 0`
       console.log(finalPlayerNumber);
       console.log(finalCpuNumber);
-      extraPointsElement.innerText = `Equal elements`;
+      elementHeader.innerText = `Equal elements!`;
   
       return [finalPlayerNumber, finalCpuNumber];
     } else {
       const finalCpuNumber = cpuNumber + 5;
       const finalPlayerNumber = playerNumber;
+      playerBonus.innerText = ` 0`;
+      cpuBonus.innerText = ` +5`
       console.log(finalPlayerNumber);
       console.log(finalCpuNumber);
-      extraPointsElement.innerText = `${cpuElement} wins over ${playerElement}. CPU gets 5 extra points.`;
+      elementHeader.innerText = `${cpuElement} is supereffective against ${playerElement}!`;
   
       return [finalPlayerNumber, finalCpuNumber];
     }
