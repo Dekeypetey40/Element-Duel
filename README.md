@@ -1,8 +1,8 @@
 # _Element Duel_
 
-![Site on different devices](assets/images/am-i-responsive.png)
+![Site on different devices](assets/images/tech-sini-ed.png)
 
-[Am I Responsive link]()
+[Multi Device Mockup Generator](https://techsini.com/multi-mockup/index.php)
 
 ---
 # Introduction
