@@ -11,6 +11,8 @@ const rollDice = document.getElementById("roll-dice");
 const elementHeader = document.getElementById("element-heading");
 const playerBonus = document.getElementById("players-bonus");
 const cpuBonus = document.getElementById("cpu-bonus");
+const playerFinal = document.getElementById("players-final");
+const cpuFinal = document.getElementById("cpu-final");
   
 /*
 Wait for the DOM to load
@@ -107,17 +109,15 @@ Waits for element choice to use run
       const finalPlayerNumber = playerNumber + 5;
       const finalCpuNumber = cpuNumber;
       playerBonus.innerText = ` +5`;
-      cpuBonus.innerText = ` 0`
-      elementHeader.innerText = `${playerElement} is supereffective against ${cpuElement}!`;
+      cpuBonus.innerText = ` 0`;
+      elementHeader.innerText = `${playerElement} is super effective against ${cpuElement}!`;
   
       return [finalPlayerNumber, finalCpuNumber];
     } else if (cpuElement === playerElement) {
       const finalCpuNumber = cpuNumber;
       const finalPlayerNumber = playerNumber;
       playerBonus.innerText = ` 0`;
-      cpuBonus.innerText = ` 0`
-      console.log(finalPlayerNumber);
-      console.log(finalCpuNumber);
+      cpuBonus.innerText = ` 0`;
       elementHeader.innerText = `Equal elements!`;
   
       return [finalPlayerNumber, finalCpuNumber];
@@ -126,9 +126,7 @@ Waits for element choice to use run
       const finalPlayerNumber = playerNumber;
       playerBonus.innerText = ` 0`;
       cpuBonus.innerText = ` +5`
-      console.log(finalPlayerNumber);
-      console.log(finalCpuNumber);
-      elementHeader.innerText = `${cpuElement} is supereffective against ${playerElement}!`;
+      elementHeader.innerText = `${cpuElement} is super effective against ${playerElement}!`;
   
       return [finalPlayerNumber, finalCpuNumber];
     }
@@ -147,23 +145,25 @@ Waits for element choice to use run
       cpuElement
     );
     if (finalPlayerNumber > finalCpuNumber) {
-      document.getElementById(
-        "result"
-      ).innerText = `You have won! Your final score is ${finalPlayerNumber}. Your opponent's final score ${finalCpuNumber}.`;
+      resultElement.innerText = `You have won!`;
+      playerFinal.innerHTML = ` ${finalPlayerNumber}`
+      cpuFinal.innerHTML = ` ${finalCpuNumber}`
       let winner = "player";
       scoreTally(winner);
       return winner;
     } else if (finalCpuNumber > finalPlayerNumber) {
       document.getElementById(
         "result"
-      ).innerText = `You have lost! Your final score is ${finalPlayerNumber}. Your opponent's final score ${finalCpuNumber}.`;
+      ).innerText = `You have lost!`;
+      playerFinal.innerHTML = ` ${finalPlayerNumber}`
+      cpuFinal.innerHTML = ` ${finalCpuNumber}`
       let winner = "cpu";
       scoreTally(winner);
       return winner;
     } else {
-      document.getElementById(
-        "result"
-      ).innerText = `You have tied! You rolled both rolled ${finalPlayerNumber}.`;
+      resultElement.innerText = `You have tied!`;
+      playerFinal.innerHTML = ` ${finalPlayerNumber}`
+      cpuFinal.innerHTML = ` ${finalCpuNumber}`
     }
   }
   /**
