@@ -25,7 +25,7 @@ h2 {
 h1 {
     margin-top: 20px;
   }
-  h2 {
+h2 {
       padding-bottom: 20px;
   }
 #element-heading {
@@ -177,8 +177,32 @@ footer p {
 
 /* Media Queries */
 @media (max-width: 500px) {
-  .game-area {
+    h1,
+    h2 {
+      background-color: rgb(217, 217, 248);
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 20px;
+    }
+    .game-area {
     margin: 0;
+  }
+  .rules-area-container {
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+  }
+  .cell {
+    width: 100%;
+  }
+  
+  .rules {
+    font-family: "Roboto Condensed", sans-serif;
+    list-style-position: inside;
+  }
+  .rules li {
+    padding: 5px;
   }
   .big {
     margin: 0 10px;
@@ -201,11 +225,15 @@ footer p {
   footer {
     margin-top: 10px;
   }
+  h1 {
+    font-size: 1.5em;
+  }
+
 }
 
 @media (max-width: 320px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .choices {
     display: flex;
