@@ -41,7 +41,9 @@
         </div>
 
         <div class="game-area">
+            <h3 id="element-heading">Your Fate Is Yet To Be Decided</h3>
             <div class="element-area">
+                
                 <div>
                     <button data-type="fire" class="button big red element"
                         aria-label="Click the fire element button to choose fire as your element">
@@ -67,16 +69,15 @@
 
             <div class="result-area">
                 <p id="extra-points"></p>
-                <p>You rolled: <span id="players-roll"></span></p>
-                <p>CPU rolled: <span id="cpu-roll"></span></p>
-                <span id="result">Your Fate Is Yet To Be Decided</span>
+                
+                <span id="result"></span>
                 <div id="choices">
-                    <div>
                         <p>Your choice: <span id="player-choice"> </span></p>
-                    </div>
-                    <div>
                         <p>Opponent Choice:<span id="cpu-choice"></span></p>
-                    </div>
+                </div>
+                <div id="rolls">
+                    <p class="roll">You rolled: <span id="players-roll" class="roll"></span></p>
+                    <p class="roll">CPU rolled: <span id="cpu-roll"></span></p>
                 </div>
             </div>
             <div id="begin-restart">
@@ -101,10 +102,10 @@
         <p>
             This project was made for educational purposes by
             <a id="github" href="https://github.com/Dekeypetey40?tab=repositories" target="_blank"
-              rel="noopener noreferrer">Kai
-              Michael-Mikhail</a>
+                rel="noopener noreferrer">Kai
+                Michael-Mikhail</a>
             2023
-          </p>
+        </p>
     </footer>
     <script src="https://kit.fontawesome.com/2032da95d4.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

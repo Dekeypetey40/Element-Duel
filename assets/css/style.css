@@ -1,202 +1,207 @@
 /*Global Styles*/
-@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto+Condensed&display=swap");
 * {
-    margin: 0;
-    border: none;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 body {
-    background-color: rgb(27, 91, 175);
-    color: black;
-    text-align: center;
-    font-family: 'Lugrasimo', cursive, Helvetica, sans-serif ;
+  background-color: rgb(27, 91, 175);
+  color: black;
+  text-align: center;
+  font-family: "Lugrasimo", cursive, Helvetica, sans-serif;
 }
 /* Heading backgrounds*/
-h1, h2 {
-    background-color: rgb(217, 217, 248);
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding-top: 20px;
+h1,
+h2 {
+  background-color: rgb(217, 217, 248);
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top: 20px;
 }
 h1 {
     margin-top: 20px;
+  }
+  h2 {
+      padding-bottom: 20px;
+  }
+#element-heading {
+    padding-bottom: 30px;
 }
+
 
 /* Rules Area Styles */
 
 .rules-area-container {
-    display: flex;
-    margin-bottom: 20px;
-    background-color: rgb(217, 217, 248);
-    margin-left: 10vw;
-    margin-right: 10vw;
-
+  display: flex;
+  margin-bottom: 20px;
+  background-color: rgb(217, 217, 248);
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 .cell {
-    width: 48%;
+  width: 48%;
 }
 
 .rules {
-    font-family: 'Roboto Condensed', sans-serif;
-    list-style-position: inside;
+  font-family: "Roboto Condensed", sans-serif;
+  list-style-position: inside;
 }
 .rules li {
-    padding: 5px;
+  padding: 5px;
 }
 
 /* Game Area Styles */
 .game-area {
-    background-color: rgb(217, 217, 248);
-    padding: 5%;
-    margin-bottom: 5vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+  background-color: rgb(217, 217, 248);
+  padding: 5%;
+  margin-bottom: 5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
-
-
-
 
 .element-area {
-    
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .button-text {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    text-transform: uppercase;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  text-transform: uppercase;
 }
 #fire-text {
-    position: relative;
-    left: -0.2rem;
+  position: relative;
+  left: -0.2rem;
 }
 .result-area {
-    padding: 5vh 5vw;
-    
+  padding: 5vh 5vw;
 }
 #choices {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#rolls {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-}
+    margin-top: 10px;
+  }
 .score-area {
-    display: inline-block;
-    padding: 10px;
-    padding-top: 40px;
+  display: inline-block;
+  padding: 10px;
+  padding-top: 40px;
 }
 #wins {
-    color:rgb(5, 99, 5)
+  color: rgb(5, 99, 5);
 }
 #losses {
-    color: darkred;
+  color: darkred;
 }
 
 /* Button Styles */
 .button {
-    font-family: 'Lugrasimo', cursive, Helvetica, sans-serif ;
-    width: 10rem;
-    height: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: white;
+  font-family: "Lugrasimo", cursive, Helvetica, sans-serif;
+  width: 10rem;
+  height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
 }
 .button:focus {
-    outline: none;
+  outline: none;
 }
 .big {
-    padding-top: 10px;
-    border-radius: 50%;
-    background-color: white;
-    border: 10px solid;
-    width: 100px;
-    height: 100px;
-    font-size: 4rem;
-    margin: 0 20px;
-    margin-bottom: 10px;
-    transition: all 0.5s;
+  padding-top: 10px;
+  border-radius: 50%;
+  background-color: white;
+  border: 10px solid;
+  width: 100px;
+  height: 100px;
+  font-size: 4rem;
+  margin: 0 20px;
+  margin-bottom: 10px;
+  transition: all 0.5s;
 }
 
 .red {
-    border-color: red;
-    color: red;
+  border-color: red;
+  color: red;
 }
 .blue {
-    border-color: blue;
-    color: blue;
+  border-color: blue;
+  color: blue;
 }
 .green {
-    border-color: green;
-    color: green;
+  border-color: green;
+  color: green;
 }
 
 .red:active,
 .red:hover {
-    background-color: orange;
+  background-color: orange;
 }
 .blue:active,
 .blue:hover {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
 .green:active,
 .green:hover {
-    background-color: lightgreen;
+  background-color: lightgreen;
 }
 #begin-restart {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 .grey {
-    background-color: #445361;
-    border: 1px transparent;
-    border-radius: 20px;
+  background-color: #445361;
+  border: 1px transparent;
+  border-radius: 20px;
 }
 /*Footer Styles*/
-footer p{
-    
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgb(217, 217, 248);
-    margin-bottom: 5vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+footer p {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(217, 217, 248);
+  margin-bottom: 5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 /* Media Queries */
 @media (max-width: 500px) {
-.game-area {
+  .game-area {
     margin: 0;
-}
-.big {
-        margin: 0 10px;
-        padding: 5px;
-        border: 7.5px solid;
-        width: 75px;
-        height: 75px;
-        font-size: 2.5rem;
-    }
-.button-text {
+  }
+  .big {
+    margin: 0 10px;
+    padding: 5px;
+    border: 7.5px solid;
+    width: 75px;
+    height: 75px;
+    font-size: 2.5rem;
+  }
+  .button-text {
     font-size: 12px;
-}
-.grey {
+  }
+  .grey {
     width: 6rem;
     height: 3rem;
-}
-.score-area {
+  }
+  .score-area {
     margin-top: 10px;
-}
+  }
 }
 
-@media (max-width: 320px){
-    h1 {
-        font-size: 1.5em;
-    }
-    .choices {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .choices {
+    display: flex;
+    flex-direction: column;
+  }
 }
