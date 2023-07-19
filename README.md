@@ -2,7 +2,7 @@
 
 ![Site on different devices](assets/images/am-i-responsive.png)
 
-[Am I Responsive link](https://ui.dev/amiresponsive?url=https://dekeypetey40.github.io/Happy-Dog-Website/)
+[Am I Responsive link]()
 
 ---
 # Introduction
@@ -91,10 +91,8 @@ Wireframes were used in the beggining stages of the design phase.
 
 * Lighthouse in Chrome Developer Tools was used. There were some issues with performance and accessibility. Color choices were changed to to address accessibility and image files were compressed to improve performance. No other errors were found.
 
-- Index.html ![index lighthouse](assets/images/lighthouse-index.png)
-- gallery.html ![gallery lighthouse](assets/images/lighthouse-gallery.png)
-- signup.html ![signup lighthouse](assets/images/lighthouse-signup.png)
-- response.html ![response lighthouse](assets/images/lighthouse-response.png)
+- Element Duel main page ![Main Page lighthouse](assets/images/lighthouse-element-duel.png)
+
 
 ## Bugs
 
