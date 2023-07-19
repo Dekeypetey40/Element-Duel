@@ -101,7 +101,6 @@ Waits for element choice to use run
     const cpuRollElement = document.getElementById("cpu-roll");
     playerRollElement.innerText = playerNumber;
     cpuRollElement.innerText = cpuNumber;
-    const extraPointsElement = document.getElementById("extra-points");
   
     /*Learned how to make js return multiple values from  
   https://www.scaler.com/topics/javascript-return-multiple-values/ */
@@ -125,7 +124,7 @@ Waits for element choice to use run
       const finalCpuNumber = cpuNumber + 5;
       const finalPlayerNumber = playerNumber;
       playerBonus.innerText = ` 0`;
-      cpuBonus.innerText = ` +5`
+      cpuBonus.innerText = ` +5`;
       elementHeader.innerText = `${cpuElement} is super effective against ${playerElement}!`;
   
       return [finalPlayerNumber, finalCpuNumber];
@@ -146,8 +145,8 @@ Waits for element choice to use run
     );
     if (finalPlayerNumber > finalCpuNumber) {
       resultElement.innerText = `You have won!`;
-      playerFinal.innerHTML = ` ${finalPlayerNumber}`
-      cpuFinal.innerHTML = ` ${finalCpuNumber}`
+      playerFinal.innerHTML = ` ${finalPlayerNumber}`;
+      cpuFinal.innerHTML = ` ${finalCpuNumber}`;
       let winner = "player";
       scoreTally(winner);
       return winner;
@@ -155,15 +154,15 @@ Waits for element choice to use run
       document.getElementById(
         "result"
       ).innerText = `You have lost!`;
-      playerFinal.innerHTML = ` ${finalPlayerNumber}`
-      cpuFinal.innerHTML = ` ${finalCpuNumber}`
+      playerFinal.innerHTML = ` ${finalPlayerNumber}`;
+      cpuFinal.innerHTML = ` ${finalCpuNumber}`;
       let winner = "cpu";
       scoreTally(winner);
       return winner;
     } else {
       resultElement.innerText = `You have tied!`;
-      playerFinal.innerHTML = ` ${finalPlayerNumber}`
-      cpuFinal.innerHTML = ` ${finalCpuNumber}`
+      playerFinal.innerHTML = ` ${finalPlayerNumber}`;
+      cpuFinal.innerHTML = ` ${finalCpuNumber}`;
     }
   }
   /**
