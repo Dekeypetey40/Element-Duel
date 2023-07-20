@@ -38,11 +38,14 @@ The Element Duel website is designed as a single page site. The page is designed
 
 The colour scheme of the site is designed with two shades of blue, which evoke a feeling of calmness. The purpose of this is so that users can relax and enjoy playing the game.
 
+## Planning
 
-## Wireframes
+### Wireframes
 
 Wireframes were used in the beggining stages of the design phase. 
 ![Element Duel Wireframe](assets/images/wireframe-ed.png) 
+
+###
 
 
 
@@ -87,12 +90,14 @@ Wireframes were used in the beggining stages of the design phase.
 
 
 # Future Features
-  - A services offered page with listed prices for each service.
-  - A meet the trainers/dog walker page.
+  - An animation of dice being rolled.
+  - A player vs player game mode.
 
 # Testing
+  - I tested the game countless times using all elements to make sure it functioned as it should
+    - When I ran into problems I used console logs to see what the functions were returning. 
   - I tested to make sure the website works in the following browsers: Firefox, Chrome and Edge. 
-  - I used Chrome's devtools and [Am I Responsive](https://ui.dev/amiresponsive) to check that the stylings respond and everything functions on all screen sizes. 
+  - I used Chrome's devtools and [Multi Device Mockup Generator](https://techsini.com/multi-mockup/index.php) to check that the stylings respond and everything functions on all screen sizes. 
   - I tested every button and link to confirm that they work and lead where they are supposed to. 
 
 
