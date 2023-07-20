@@ -28,7 +28,7 @@ The website provides an interactive experience where the user can play against t
 - As a first time visitor, I want to easily understand how the game works, so that I become interested in it.
 - As a first time visitor, I want the website to be easy to interact with, so I can easily have fun playing the game.
 - As a user, I want to be able to see who made the website and see their GitHub repository, so that I can see what they can do.
-- As a mobile device user, I want to interact with a responsive website, so that I can visit it with any device.
+- As a mobile device user, I want to interact with a responsive website, so that I can play the game with any device.
 
 
 ---
