@@ -40,7 +40,7 @@ The website provides an interactive experience where the user can play against t
 ## Wireframes
 
 Wireframes were used in the beggining stages of the design phase. 
-[Link to wireframe images](https://github.com/Dekeypetey40/Happy-Dog-Website/tree/main/wireframes) 
+![Element Duel Wireframe](assets/images/wireframe-ed.png) 
 
 
 
@@ -135,9 +135,9 @@ Wireframes were used in the beggining stages of the design phase.
 # Deployment
 The site was deployed to GitHub pages. The following steps were taken to do so:
 1. Log in to [Github](https://github.com/)
-2. Navigate to [dekeypetey40/Happy-Dog-Website](https://github.com/Dekeypetey40/Happy-Dog-Website) in the list of repositories
-3. In the GitHub repository, navigate to the [Settings](https://github.com/Dekeypetey40/Happy-Dog-Website/settings) tab
-4. In Settings select [Pages](https://github.com/Dekeypetey40/Happy-Dog-Website/settings/pages) on the left hand menu.
+2. Navigate to [https://github.com/Dekeypetey40/Element-Duel](https://github.com/Dekeypetey40/Happy-Dog-Website) in the list of repositories
+3. In the GitHub repository, navigate to the [Settings](https://github.com/Dekeypetey40/Element-Duel/settings) tab
+4. In Settings select [Pages](https://github.com/Dekeypetey40/Element-Duel/settings/pages) on the left hand menu.
 5. From the source section drop-down menu, select the main branch.
 6. Once the main branch has been selected, click on the save button in the branch section. Wait for the link to be generated and then refresh the page.
 
@@ -149,3 +149,4 @@ The site was deployed to GitHub pages. The following steps were taken to do so:
 
 ## Media
   - Icon for my website was taken from [Flaticon](https://www.flaticon.com/)
+  - Font Awesome was used for the logo header and the element buttons. 
