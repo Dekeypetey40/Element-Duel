@@ -109,6 +109,7 @@ Wireframes were used in the beggining stages of the design phase.
 # Future Features
   - An animation of dice being rolled.
   - A player vs player game mode.
+  - Adding a best of 5 rounds feature. 
 
 ---
 
