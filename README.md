@@ -45,9 +45,16 @@ The colour scheme of the site is designed with two shades of blue, which evoke a
 Wireframes were used in the beggining stages of the design phase. 
 ![Element Duel Wireframe](assets/images/wireframe-ed.png) 
 
-###
+### Function and variable planning
+
+![Function planning image](assets/images/function-path.png)
+- In the planning stages a map of how the user interacts the site was created.
+  - It lists the order of events.
+  - It lists the functions I predicted I would need.
+  - It lists the variables I predicted I would need. 
 
 
+---
 
 # Features
 
