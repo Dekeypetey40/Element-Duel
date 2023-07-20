@@ -45,6 +45,8 @@ The colour scheme of the site is designed with two shades of blue, which evoke a
 Wireframes were used in the beggining stages of the design phase. 
 ![Element Duel Wireframe](assets/images/wireframe-ed.png) 
 
+- The rules section was expanded upon as I decided the text in the wireframe was insufficient to explain the rules properly.
+
 ---
 
 ### Function and variable planning
@@ -54,6 +56,9 @@ Wireframes were used in the beggining stages of the design phase.
   - It lists the order of events.
   - It lists the functions I predicted I would need.
   - It lists the variables I predicted I would need. 
+- In the development process I added a function for the computer to pick an element.
+- The displayResult function ended up being spread out between the other functions. 
+- Many variables were added so that I could manipulate the text on the DOM and have interactive buttons. 
 
 ---
 
