@@ -45,6 +45,8 @@ The colour scheme of the site is designed with two shades of blue, which evoke a
 Wireframes were used in the beggining stages of the design phase. 
 ![Element Duel Wireframe](assets/images/wireframe-ed.png) 
 
+---
+
 ### Function and variable planning
 
 ![Function planning image](assets/images/function-path.png)
@@ -52,7 +54,6 @@ Wireframes were used in the beggining stages of the design phase.
   - It lists the order of events.
   - It lists the functions I predicted I would need.
   - It lists the variables I predicted I would need. 
-
 
 ---
 
@@ -63,7 +64,7 @@ Wireframes were used in the beggining stages of the design phase.
 ![Full Home Page](assets/images/ed-full-page.png)
 ![Full page mobile](assets/images/ed-full-mobile.png)
 
-- ### Logo header and rules section
+### Logo header and rules section
 
 ![Full rules image](assets/images/ed-big-rules.png)
 - The rules are written concisely, so that the user can quickly and easily understand how the game works.
@@ -71,8 +72,9 @@ Wireframes were used in the beggining stages of the design phase.
 ![Mobile rules image](assets/images/ed-rules-mobile.png)
 - On a mobile screen, the rules go from 2 to 1 column to make them easier to read while still fitting onto the screen without scrolling.
 
+---
 
-- ### Game Area
+### Game Area
 
 ![Full game area image](assets/images/game-area-big.png)
 - The game area is the interactive section of the website.  
@@ -86,19 +88,20 @@ Wireframes were used in the beggining stages of the design phase.
 ![Final result image](assets/images/final-result.png)
 - The final result is shown to the user.
 - The Wins and Losses section at the bottom of the game area keeps track of how many times the player wins or loses. 
+
 ---
 
-- ### Footer
+### Footer
 ![Footer image](assets/images/hero-section.png) 
 - The footer simply indicates the purpose of the website and provides a link to the authors GitHub repositories. 
 
 ---
 
-
-
 # Future Features
   - An animation of dice being rolled.
   - A player vs player game mode.
+
+---
 
 # Testing
   - I tested the game countless times using all elements to make sure it functioned as it should
@@ -120,6 +123,7 @@ Wireframes were used in the beggining stages of the design phase.
 * [JSHint](https://jshint.com/) was run to check my javascript code. It detected two functions called twice and some missing semicolons. After this no errors were found. 
 ![JS Validation](assets/images/js-hint-ed.png)
 
+---
 
 ## Bugs
 
@@ -127,8 +131,8 @@ Wireframes were used in the beggining stages of the design phase.
   - My compare elements function did not work as it should and was not adding 5 to the player who had an advantageous element. This was largely due to the fact that I had called two different functions twice. Once this was fixed the game worked as it should. 
   - When I reformatted my HTML file to be easier to read and then tried to adapt my js file to it the game ceased to function as it should. I undid all my changes and redid the process, checking everything was working with each change I made. This process resulted with the desired effect. 
 
+---
 
-  ***
 ## Unsolved bugs
 
 ## Manual Testing
@@ -178,6 +182,8 @@ The site was deployed to GitHub pages. The following steps were taken to do so:
 - A huge thank you to my mentor Aleksei Konovalov for all of his help throughout this process.
 - Inspiration for my button design was taken from Code Institute's Love Maths project and was adapted to suit my website.
 - The method of functions returning a value as an array was taken from [scaler.com](https://www.scaler.com/topics/javascript-return-multiple-values/).
+
+---
 
 ## Media
   - Icon for my website was taken from [Flaticon](https://www.flaticon.com/)
