@@ -101,7 +101,7 @@ Wireframes were used in the beggining stages of the design phase.
 ---
 
 ### Footer
-![Footer image](assets/images/hero-section.png) 
+![Footer image](assets/images/ed-footer.png) 
 - The footer simply indicates the purpose of the website and provides a link to the authors GitHub repositories. 
 
 ---
