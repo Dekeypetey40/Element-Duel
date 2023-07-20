@@ -126,10 +126,10 @@ Wireframes were used in the beggining stages of the design phase.
 ![Main page validation](assets/images/validator-index.png) ![gallery validation](assets/images/html-validation-ed.png)
 
 * [CSS Validator](https://validator.w3.org/) was run and no errors were found, but some minor warnings were attended to. At the time of submission the css code successfully passed the validator with no errors and only minor warnings. 
-![css validation](assets/images/validator-css.png)
+![css validation](assets/images/css-validation.png)
 
 * Lighthouse in Chrome Developer Tools was used. Initially, there was a low accessibility rating. The cause of this was a lack of aria-labels on the buttons and some html semantic structure. After this was fixed there were no issues.
-- Element Duel main page ![Main Page lighthouse](assets/images/lighthouse-element-duel.png)
+![Main Page lighthouse](assets/images/lighthouse-element-duel.png)
 * [JSHint](https://jshint.com/) was run to check my javascript code. It detected two functions called twice and some missing semicolons. After this no errors were found. 
 ![JS Validation](assets/images/js-hint-ed.png)
 
