@@ -49,30 +49,38 @@ Wireframes were used in the beggining stages of the design phase.
 # Features
 
 ## Main Page 
+
 ![Full Home Page](assets/images/ed-full-page.png)
+![Full page mobile](assets/images/ed-full-mobile.png)
 
 - ### Logo header and rules section
-- The rules are written concisely, so that the user can quickly and easily understand how the game works.
+
 ![Full rules image](assets/images/ed-big-rules.png)
-- On a mobile screen, the rules go from 2 to 1 column to make them easier to read while still fitting onto the screen without scrolling.
+- The rules are written concisely, so that the user can quickly and easily understand how the game works.
+
 ![Mobile rules image](assets/images/ed-rules-mobile.png)
+- On a mobile screen, the rules go from 2 to 1 column to make them easier to read while still fitting onto the screen without scrolling.
 
 
+- ### Game Area
 
-
+![Full game area image](assets/images/game-area-big.png)
+- The game area is the interactive section of the website.  
+- Once the player clicks the begin duel button messages pop up to explain to the user how to proceed. 
+- In the results section of the game area the result of each function is shown to the user so that they understand how they go their result.
+![Image after duel has begun](assets/images/choose-element-ed.png)
+- This indicates to the user that they must now select an element.
+- When the user does so the next promt appears
+![Image after element choice](assets/images/element-choice-made.png)
+- The user is promted to roll the dice and their chosen element appears in the results area.
+![Final result image](assets/images/final-result.png)
+- The final result is shown to the user.
+- The Wins and Losses section at the bottom of the game area keeps track of how many times the player wins or loses. 
 ---
-
-- ### Hero section
-  
-
-  ![Hero section](assets/images/hero-section.png) <!-- FIX THIS -->
----
-
-- ### Ethos section
- 
 
 - ### Footer
-  
+![Footer image](assets/images/hero-section.png) 
+- The footer simply indicates the purpose of the website and provides a link to the authors GitHub repositories. 
 
 ---
 
