@@ -112,7 +112,7 @@ Wireframes were used in the beggining stages of the design phase.
 ## Bugs
 
 ## Solved bugs
-  - My compare elements function did not work as it should and was not adding 5 to the player who had an advantageous element. This was largely due to the fact that I had called two functions multiple times. Once this was fixed the game worked as it should. 
+  - My compare elements function did not work as it should and was not adding 5 to the player who had an advantageous element. This was largely due to the fact that I had called two different functions twice. Once this was fixed the game worked as it should. 
   - When I reformatted my HTML file to be easier to read and then tried to adapt my js file to it the game ceased to function as it should. I undid all my changes and redid the process, checking everything was working with each change I made. This process resulted with the desired effect. 
 
 
