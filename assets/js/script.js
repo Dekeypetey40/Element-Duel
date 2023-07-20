@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let elementButtons = document.getElementsByClassName("element");
     for (let element of elementButtons) {
       element.addEventListener("click", function () {
+        elementHeader.innerText = "Your choice has been made"
         resultElement.innerText =
           "Roll the dice and the winner will be determined";
         document.getElementById("cpu-choice").innerText = ` ?`;
