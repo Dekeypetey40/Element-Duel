@@ -146,6 +146,9 @@ The site was deployed to GitHub pages. The following steps were taken to do so:
 
 
 ## Content
+- A huge thank you to my mentor Aleksei Konovalov for all of his help throughout this process.
+- Inspiration for my button design was taken from Code Institute's Love Maths project and was adapted to suit my website.
+- The method of functions returning a value as an array was taken from [scaler.com](https://www.scaler.com/topics/javascript-return-multiple-values/).
 
 ## Media
   - Icon for my website was taken from [Flaticon](https://www.flaticon.com/)
