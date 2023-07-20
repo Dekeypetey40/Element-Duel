@@ -34,7 +34,9 @@ The website provides an interactive experience where the user can play against t
 ---
 
 # Design 
+The Element Duel website is designed as a single page site. The page is designed so that minimal scrolling is required. The entirety of the main heading and rules section should fit onto the screen and so should the game area. This is so that one can either read the rules or play the game without having to scroll. This holds true on different devices as well. 
 
+The colour scheme of the site is designed with two shades of blue, which evoke a feeling of calmness. The purpose of this is so that users can relax and enjoy playing the game.
 
 
 ## Wireframes
@@ -46,9 +48,14 @@ Wireframes were used in the beggining stages of the design phase.
 
 # Features
 
-## Home page
-![Full Home Page](assets/images/full-home-page.png)
-- ### Navigation
+## Main Page 
+![Full Home Page](assets/images/ed-full-page.png)
+
+- ### Logo header and rules section
+- The rules are written concisely, so that the user can quickly and easily understand how the game works.
+![Full rules image](assets/images/ed-big-rules.png)
+- On a mobile screen, the rules go from 2 to 1 column to make them easier to read while still fitting onto the screen without scrolling.
+![Mobile rules image](assets/images/ed-rules-mobile.png)
 
 
 
