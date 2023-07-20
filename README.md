@@ -152,9 +152,9 @@ Wireframes were used in the beggining stages of the design phase.
 | Element choice Area | | | | | |
 | Element Header | Click the Begin Duel button | InnerText changes from "your fate is yet to be decided" to "choose your element" | Yes | Yes |  |
 | Element Header | Click the Roll Dice button | InnerText changes from "choose your element" to one of two options "x element is super effective against y element" or "equal elements" | Yes | Yes |  |
-| Fire element button | Click the button | fire becomes the players chosen element, cpuChoice is run and the roll dice button appears | Yes | Yes | If user doesn't choose an element the roll dice button does not appear. |
-| Water element button | Click the button | water becomes the players chosen element, cpuChoice is run and and the roll dice button appears | Yes | Yes | If user doesn't choose an element the roll dice button does not appear. |
-| Nature element button | Click the button | nature becomes the players chosen element, cpuChoice is run and and the roll dice button appears | Yes | Yes | If user doesn't choose an element the roll dice button does not appear. |
+| Fire element button | Click the button | fire becomes the players chosen element, cpuChoice is run, the roll dice button appears and the element header says "Your choice has been made". | Yes | Yes | If user doesn't choose an element the roll dice button does not appear. |
+| Water element button | Click the button | water becomes the players chosen element, cpuChoice is run, the roll dice button appears and the element header says "Your choice has been made". | Yes | Yes | If user doesn't choose an element the roll dice button does not appear. |
+| Nature element button | Click the button | nature becomes the players chosen element, cpuChoice is run, the roll dice button appears and the element header says "Your choice has been made".  | Yes | Yes | If user doesn't choose an element the roll dice button does not appear. |
 | Results area | | | | | |
 | Player Side | | | | | |
 | Your element | Click on an element button  | Your chosen element appears beside "Your element:"  | yes | yes | |
