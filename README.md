@@ -87,7 +87,11 @@ Wireframes were used in the beggining stages of the design phase.
 - In the results section of the game area the result of each function is shown to the user so that they understand how they go their result.
 ![Image after duel has begun](assets/images/choose-element-ed.png)
 - This indicates to the user that they must now select an element.
-- When the user does so the next promt appears
+- The element buttons are interactive. Once a button is hovered over they get a background colour.
+![Fire button](assets/images/fire-button.png)
+![Water button](assets/images/water-button.png)
+![Nature button](assets/images/nature-button.png)
+- When the user clicks on an element button the next promt appears.
 ![Image after element choice](assets/images/element-choice-made.png)
 - The user is promted to roll the dice and their chosen element appears in the results area.
 ![Final result image](assets/images/final-result.png)
