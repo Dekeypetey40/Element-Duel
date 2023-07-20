@@ -144,6 +144,8 @@ Wireframes were used in the beggining stages of the design phase.
 | Score Area | | | | | |
 | Wins| Test the game until the player wins | 1 is added to the player's wins tally | Yes | Yes | |
 | Losses| Test the game until the computer wins | 1 is added to the player's losses tally | Yes | Yes | |
+| Footer | | | | | |
+| My GitHub link | Click on the link | The link opens up my GitHub repositories in a separate tab | Yes | Yes | |
 
 ---
 
