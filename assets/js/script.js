@@ -140,21 +140,24 @@ function chooseWinner(playerNumber, cpuNumber) {
     cpuElement
   );
   if (finalPlayerNumber > finalCpuNumber) {
-    resultElement.innerText = `You have won!`;
+    resultElement.innerText = `You have won! 
+    Click roll dice to play with the same element, or choose a new one.`;
     playerFinal.innerHTML = ` ${finalPlayerNumber}`;
     cpuFinal.innerHTML = ` ${finalCpuNumber}`;
     let winner = "player";
     scoreTally(winner);
     return winner;
   } else if (finalCpuNumber > finalPlayerNumber) {
-    document.getElementById("result").innerText = `You have lost!`;
+    resultElement.innerText = `You have lost!
+    Click roll dice to play with the same element, or choose a new one.`;
     playerFinal.innerHTML = ` ${finalPlayerNumber}`;
     cpuFinal.innerHTML = ` ${finalCpuNumber}`;
     let winner = "cpu";
     scoreTally(winner);
     return winner;
   } else {
-    resultElement.innerText = `You have tied!`;
+    resultElement.innerText = `You have tied!
+    Click roll dice to play with the same element, or choose a new one.`;
     playerFinal.innerHTML = ` ${finalPlayerNumber}`;
     cpuFinal.innerHTML = ` ${finalCpuNumber}`;
   }
