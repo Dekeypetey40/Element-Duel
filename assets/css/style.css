@@ -121,6 +121,9 @@ h2 {
   letter-spacing: 1px;
   color: white;
 }
+.hide {
+    visibility: hidden;
+}
 .button:focus {
   outline: none;
 }

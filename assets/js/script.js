@@ -23,16 +23,13 @@ Event listeners for the buttons
 Waits for element choice to use run
 */
 document.addEventListener("DOMContentLoaded", function () {
-  //Hide the restart and roll dice buttons
-  document.getElementById("restart").style.display = "none";
-  document.getElementById("roll-dice").style.display = "none";
 
   //start button event listener
   //Hides the start button, shows restart
   startButton.addEventListener("click", function () {
     elementHeader.innerText = "Choose your element";
     startButton.style.display = "none";
-    document.getElementById("restart").style.display = "";
+    
     //Listens for element button to be clicked
     //and assigns that element to player
     let elementButtons = document.getElementsByClassName("element");
@@ -44,7 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("cpu-choice").innerText = ` ?`;
         let playerElement = this.getAttribute("data-type");
         document.getElementById("player-choice").innerText = `${playerElement}`;
-        document.getElementById("roll-dice").style.display = "";
+        document.getElementById("roll-dice").style.visibility = "visible";
+        document.getElementById("restart").style.visibility = "visible";
         return playerElement;
       });
     }
