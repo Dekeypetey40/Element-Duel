@@ -123,7 +123,7 @@ Wireframes were used in the beggining stages of the design phase.
 
 ## Validator testing
 * [HTML Validator](https://validator.w3.org/) was run. No errors or warnings were shown. 
-![Main page validation](assets/images/validator-index.png) ![gallery validation](assets/images/html-validation-ed.png)
+![Main page validation](assets/images/html-validation-ed.png)
 
 * [CSS Validator](https://validator.w3.org/) was run and no errors were found, but some minor warnings were attended to. At the time of submission the css code successfully passed the validator with no errors and only minor warnings. 
 ![css validation](assets/images/css-validation.png)
