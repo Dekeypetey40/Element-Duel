@@ -13,6 +13,8 @@ const playerBonus = document.getElementById("players-bonus");
 const cpuBonus = document.getElementById("cpu-bonus");
 const playerFinal = document.getElementById("players-final");
 const cpuFinal = document.getElementById("cpu-final");
+const playerRollElement = document.getElementById("players-roll");
+const cpuRollElement = document.getElementById("cpu-roll");
 
 /*
 Wait for the DOM to load
@@ -36,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let elementButtons = document.getElementsByClassName("element");
     for (let element of elementButtons) {
       element.addEventListener("click", function () {
-        elementHeader.innerText = "Your choice has been made";
+        elementHeader.innerText = "Your choice has been made"
         resultElement.innerText =
           "Roll the dice and the winner will be determined";
         document.getElementById("cpu-choice").innerText = ` ?`;
@@ -71,14 +73,11 @@ function cpuChoice() {
   let cpuElement;
   switch (compChoice) {
     case 0:
-      cpuElement = Object.keys(elements)[0];
-      return cpuElement;
+      return  Object.keys(elements)[0];
     case 1:
-      cpuElement = Object.keys(elements)[1];
-      return cpuElement;
+      return Object.keys(elements)[1];
     case 2:
-      cpuElement = Object.keys(elements)[2];
-      return cpuElement;
+      return Object.keys(elements)[2];
   }
 }
 /**
@@ -98,8 +97,6 @@ function randomDiceRoll() {
 function compareElements(playerElement, cpuElement) {
   const cpuNumber = randomDiceRoll();
   const playerNumber = randomDiceRoll();
-  const playerRollElement = document.getElementById("players-roll");
-  const cpuRollElement = document.getElementById("cpu-roll");
   playerRollElement.innerText = playerNumber;
   cpuRollElement.innerText = cpuNumber;
 
