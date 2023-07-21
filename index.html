@@ -7,25 +7,27 @@
     <meta name="description" content="Element Duel is a chance based dice rolling game">
     <meta name="keywords" content="Element Duel, element, duel, game, chance">
     <meta name="author" content="Kai Michael-Mikhail">
+    <!-- Links for the css file and the favicon image  -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title>Element Duel</title>
 </head>
 
 <body>
+    <!-- The logo and rules headings on the page  -->
     <header>
         <h1 class="heading">
             <i class="fa-solid fa-dice-d20 logo"></i> Element Duel <i class="fa-solid fa-dice-d20 logo"></i>
         </h1>
         <h2 class="rules-heading">Game Rules
-            
+
         </h2>
     </header>
 
     <main>
 
 
-        
+<!-- Contained in two divs so that they can collapse into one column on mobile screens  -->
         <div class="rules-area-container">
             <div class="box1 cell">
                 <ul class="rules">
@@ -75,6 +77,7 @@
                     <h4>Player</h4>
                     <h4>Opponent</h4>
                 </div>
+<!-- All of the spans are left empty so that we can fill them with javascript  -->
                 <div id="choices">
                     <p>Element: <span id="player-choice"> </span></p>
                     <p>Element:<span id="cpu-choice"></span></p>
@@ -97,13 +100,14 @@
                 
             </div>
             <div id="begin-restart">
-                <button id="roll-dice" class="button grey" aria-label="Click the roll dice button to roll the dice">
+<!-- Reset and roll dice buttons are hidden until an element is chosen.  -->
+                <button id="roll-dice" class="button hide grey" aria-label="Click the roll dice button to roll the dice">
                     Roll Dice
                 </button>
                 <button id="begin-duel" class="button grey" aria-label="Click the begin duel button to start the game">
                     Begin Duel
                 </button>
-                <button id="restart" class="button grey"
+                <button id="restart" class="button hide grey"
                     aria-label="Click the reset button to clear the score and reload the page">
                     Reset
                 </button>
