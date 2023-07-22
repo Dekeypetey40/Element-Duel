@@ -132,47 +132,43 @@ function compareElements(playerElement, cpuElement) {
  * and then declares the result on the DOM and returns a winner variable
  */
 function chooseWinner(playerNumber, cpuNumber) {
-  const cpuElement = cpuChoice();
-  document.getElementById("cpu-choice").innerText = ` ${cpuElement}`;
-  const playerElement = document.getElementById("player-choice").innerText;
-  const [finalPlayerNumber, finalCpuNumber] = compareElements(
-    playerElement,
-    cpuElement
-  );
-  if (finalPlayerNumber > finalCpuNumber) {
-    resultElement.innerText = `You have won! 
-    Click roll dice to play with the same element, or choose a new one.`;
-    playerFinal.innerHTML = ` ${finalPlayerNumber}`;
-    cpuFinal.innerHTML = ` ${finalCpuNumber}`;
-    let winner = "player";
-    scoreTally(winner);
-    return winner;
-  } else if (finalCpuNumber > finalPlayerNumber) {
-    resultElement.innerText = `You have lost!
-    Click roll dice to play with the same element, or choose a new one.`;
-    playerFinal.innerHTML = ` ${finalPlayerNumber}`;
-    cpuFinal.innerHTML = ` ${finalCpuNumber}`;
-    let winner = "cpu";
-    scoreTally(winner);
-    return winner;
-  } else {
-    resultElement.innerText = `You have tied!
-    Click roll dice to play with the same element, or choose a new one.`;
-    playerFinal.innerHTML = ` ${finalPlayerNumber}`;
-    cpuFinal.innerHTML = ` ${finalCpuNumber}`;
+    const cpuElement = cpuChoice();
+    document.getElementById("cpu-choice").innerText = ` ${cpuElement}`;
+    const playerElement = document.getElementById("player-choice").innerText;
+    const [finalPlayerNumber, finalCpuNumber] = compareElements(
+      playerElement,
+      cpuElement
+    );
+    if (finalPlayerNumber > finalCpuNumber) {
+      resultElement.innerText = `You have won! 
+      Roll again to play with the same element or pick a new one.`;
+      playerFinal.innerHTML = ` ${finalPlayerNumber}`;
+      cpuFinal.innerHTML = ` ${finalCpuNumber}`;
+      scoreTally("player");
+    } else if (finalCpuNumber > finalPlayerNumber) {
+      document.getElementById("result").innerText = `You have lost!
+      Roll again to play with the same element or pick a new one.`;
+      playerFinal.innerHTML = ` ${finalPlayerNumber}`;
+      cpuFinal.innerHTML = ` ${finalCpuNumber}`;
+      scoreTally("cpu");
+    } else {
+      resultElement.innerText = `You have tied!
+      Roll again to play with the same element or pick a new one.`;
+      playerFinal.innerHTML = ` ${finalPlayerNumber}`;
+      cpuFinal.innerHTML = ` ${finalCpuNumber}`;
+    }
   }
-}
-/**
- * The function reads the winner variable which
- * says if the player won or lost. A point is
- * then added to the correct tally.
- */
-function scoreTally(winner) {
-  let oldWins = parseInt(document.getElementById("wins").innerText);
-  let oldLosses = parseInt(document.getElementById("losses").innerText);
-  if (winner === "player") {
-    document.getElementById("wins").innerText = ++oldWins;
-  } else if (winner === "cpu") {
-    document.getElementById("losses").innerText = ++oldLosses;
+  /**
+   * The function reads the winner variable which
+   * says if the player won or lost. A point is
+   * then added to the correct tally.
+   */
+  function scoreTally(winner) {
+    let oldWins = parseInt(document.getElementById("wins").innerText);
+    let oldLosses = parseInt(document.getElementById("losses").innerText);
+    if (winner === "player") {
+      document.getElementById("wins").innerText = ++oldWins;
+    } else if (winner === "cpu") {
+      document.getElementById("losses").innerText = ++oldLosses;
+    }
   }
-}
