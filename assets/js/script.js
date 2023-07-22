@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let elementButtons = document.getElementsByClassName("element");
     for (let element of elementButtons) {
       element.addEventListener("click", function () {
-        elementHeader.innerText = "Your choice has been made"
+        elementHeader.innerText = "Your choice has been made";
         resultElement.innerText =
           "Roll the dice and the winner will be determined";
         document.getElementById("cpu-choice").innerText = ` ?`;
@@ -68,10 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 function cpuChoice() {
   const compChoice = Math.floor(Math.random() * 3);
-  let cpuElement;
   switch (compChoice) {
     case 0:
-      return  Object.keys(elements)[0];
+      return Object.keys(elements)[0];
     case 1:
       return Object.keys(elements)[1];
     case 2:
@@ -97,28 +96,30 @@ function compareElements(playerElement, cpuElement) {
   const playerNumber = randomDiceRoll();
   playerRollElement.innerText = playerNumber;
   cpuRollElement.innerText = cpuNumber;
+  let finalPlayerNumber;
+  let finalCpuNumber;
 
   /*Learned how to make js return multiple values from  
   https://www.scaler.com/topics/javascript-return-multiple-values/ */
   if (elements[playerElement] === cpuElement) {
-    const finalPlayerNumber = playerNumber + 5;
-    const finalCpuNumber = cpuNumber;
+    finalPlayerNumber = playerNumber + 5;
+    finalCpuNumber = cpuNumber;
     playerBonus.innerText = ` +5`;
     cpuBonus.innerText = ` 0`;
     elementHeader.innerText = `${playerElement} is super effective against ${cpuElement}!`;
 
     return [finalPlayerNumber, finalCpuNumber];
   } else if (cpuElement === playerElement) {
-    const finalCpuNumber = cpuNumber;
-    const finalPlayerNumber = playerNumber;
+    finalCpuNumber = cpuNumber;
+    finalPlayerNumber = playerNumber;
     playerBonus.innerText = ` 0`;
     cpuBonus.innerText = ` 0`;
     elementHeader.innerText = `Equal elements!`;
 
     return [finalPlayerNumber, finalCpuNumber];
   } else {
-    const finalCpuNumber = cpuNumber + 5;
-    const finalPlayerNumber = playerNumber;
+    finalCpuNumber = cpuNumber + 5;
+    finalPlayerNumber = playerNumber;
     playerBonus.innerText = ` 0`;
     cpuBonus.innerText = ` +5`;
     elementHeader.innerText = `${cpuElement} is super effective against ${playerElement}!`;
